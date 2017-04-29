@@ -1,8 +1,7 @@
 # 实验室C语言编程规范
 版本号/Version|制定者/Writer|更新日期/Update Date|备注/Note
 --|--|--|--
-0.0.1|ArvinSC|2017-04-29|First Draft Doc, Any ERROR or MISTAKE, Please contact <a href="mailto:arvinsc@foxmail.com?subject=FeedBackAtCProgrammingManual">arvinsc@foxmail.com</a>
-
+0.0.1|ArvinSC|2017-04-29|First Draft Doc.  <br />Any ERROR or MISTAKE, Please contact <a href="mailto:arvinsc@foxmail.com?subject=FeedBackAtCProgrammingManual">arvinsc@foxmail.com</a>
 # 1. 项目组织规范
 项目命名,一个工程项目应当存放在同一个文件中,项目名应当和实际开发作用相联系,主程序文件名和输出文件名应当与项目名一致.  
 ```

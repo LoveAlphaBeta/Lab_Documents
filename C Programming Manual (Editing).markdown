@@ -56,6 +56,7 @@ eg. Project: LED
   #include <header.h> // Default include path
   #include "header.h" // Current project path
   ```
+- 如果库文件中的函数没有被调用任何一次,则应该去掉对其的引用,如果引入的库,在当前源码中没有发挥任何作用，则应当去掉对其引用.
 ## 3.2. 函数的写法
 - 在书写普通函数时,应当在命名上符合函数命名规范.
 - 函数书写时,应当明确输入与输出,输入参数命名应当符合变量命名规范.

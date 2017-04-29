@@ -1,10 +1,10 @@
 # 实验室C语言编程规范
 版本号/Version|制定者/Writer|更新日期/Update Date|备注/Note
 --|--|--|--
-0.0.1|ArvinSC|2017-04-29|First Draft Doc
+0.0.1|ArvinSC|2017-04-29|First Draft Doc, Any ERROR or MISTAKE, Please contact <a href="mailto:arvinsc@foxmail.com?subject=FeedBackAtCProgrammingManual">arvinsc@foxmail.com</a>
 
 # 1. 项目组织规范
-项目命名：一个工程项目应当存放在同一个文件中,项目名应当和实际开发作用相联系,主程序文件名和输出文件名应当与项目名一致.  
+项目命名,一个工程项目应当存放在同一个文件中,项目名应当和实际开发作用相联系,主程序文件名和输出文件名应当与项目名一致.  
 ```
 eg. Project: LED
 . // Represent Current Directory
@@ -43,7 +43,7 @@ eg. Project: LED
   ```
 # 3. 代码书写规范
 ## 3.1. 引用库文件的规范
-- 引用库文件时,引用文件应当遵循原文件命名规范，如果是最通用性地头文件，可以按照使用最多的形式引用.引用时，按照"#include <header.h>"的形式引用,在"include"后添加一个空格,如:
+- 引用库文件时,引用文件应当遵循原文件命名规范,如果是最通用性地头文件,可以按照使用最多的形式引用.引用时,按照"#include <header.h>"的形式引用,在"include"后添加一个空格,如:
     ```
       // 原库文件: STDIO.H  MotorDriver.h
       // 引用时如下:
@@ -52,15 +52,15 @@ eg. Project: LED
       #include <MotorDriver.h>
       // 而不应当是 #include <motordriver.H>
     ```
-- 引用库文件时，如果库文件存在于当前目录，则应当使用"#include "header.h""的形式,如果存在于编译器默认目录，应当使用"#include <header.h>"的形式，如:
+- 引用库文件时,如果库文件存在于当前目录,则应当使用"#include "header.h""的形式,如果存在于编译器默认目录,应当使用"#include <header.h>"的形式,如:
   ```
   #include <header.h> // Default include path
   #include "header.h" // Current project path
   ```
 ## 3.2. 函数的写法
-- 在书写普通函数时，应当在命名上符合函数命名规范.
-- 函数书写时，应当明确输入与输出，输入参数命名应当符合变量命名规范.
-- main函数的写法，依照C/C++11标准，如下所示:
+- 在书写普通函数时,应当在命名上符合函数命名规范.
+- 函数书写时,应当明确输入与输出,输入参数命名应当符合变量命名规范.
+- main函数的写法,依照C/C++11标准,如下所示:
   ```
   int main(){
     // Your code here.
@@ -68,7 +68,7 @@ eg. Project: LED
   }
   ```
 ## 3.3. 缩进规范
-- 代码缩进，可以采用一个TAB占位符或者两个空格.
+- 代码缩进,可以采用一个TAB占位符或者两个空格.
 ## 3.4. 注释规范
 - 单行注释应当在"//"语法标记后添加一个空格
-- 尽量采用英文的注释，尤其在对于中文或非ASCII编码敏感的编辑器中
+- 尽量采用英文的注释,尤其在对于中文或非ASCII编码敏感的编辑器中

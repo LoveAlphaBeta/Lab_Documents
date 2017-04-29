@@ -56,7 +56,7 @@ eg. Project: LED
   #include <header.h> // Default include path
   #include "header.h" // Current project path
   ```
-- 如果库文件中的函数没有被调用任何一次,则应该去掉对其的引用,如果引入的库,在当前源码中没有发挥任何作用，则应当去掉对其引用.
+- 如果库文件中的函数没有被调用任何一次,则应该去掉对其的引用;如果引入的库,在当前源码中没有发挥任何作用，则应当去掉对其引用.
 ## 3.2. 函数的写法
 - 在书写普通函数时,应当在命名上符合函数命名规范.
 - 函数书写时,应当明确输入与输出,输入参数命名应当符合变量命名规范.
@@ -66,9 +66,21 @@ eg. Project: LED
     // Your code here.
     return 0;
   }
+
+  // 或者
+  int main(int argc, char const *argv[]) { // main parameters are for consol start up parameters, Not everyone needs.
+    // Your code here.
+    return 0;
+  }
   ```
 ## 3.3. 缩进规范
 - 代码缩进,可以采用一个TAB占位符或者两个空格.
 ## 3.4. 注释规范
 - 单行注释应当在"//"语法标记后添加一个空格
+- 多行注释应当在每一个'\*'前后都留有一个空格,每一行首符都应该对其,如:
+  ```
+  /* comment line 1
+   * comment line 2
+   * comment line 3 */
+  ```
 - 尽量采用英文的注释,尤其在对于中文或非ASCII编码敏感的编辑器中
